@@ -41,12 +41,12 @@ public class BaseClass {
 		System.out.println("-------Database connection successful-------");	
 	}
 	//@Parameters("browser")
-	@BeforeTest
-	//@BeforeClass(alwaysRun=true)
+	//@BeforeTest
+	@BeforeClass(alwaysRun=true)
 	public void bcConfig(/*String  pvalue*/) throws IOException
 	{
 		String URL =fUtil.readDataFromPropertyFile("url");
-		driver=new ChromeDriver();
+		//driver=new ChromeDriver();
 		//driver=new ChromeDriver();
 		//for cross browser execution
 		//if(pvalue.equals("firefox"))
@@ -89,8 +89,8 @@ public class BaseClass {
 		System.out.println("------------Logout  of  Application successfully-----------");
 
 	}
-	@AfterTest
-	//@AfterClass(alwaysRun=true)
+	//@AfterTest
+	@AfterClass(alwaysRun=true)
 	public void acConfig()
 	{
 		driver.quit();
