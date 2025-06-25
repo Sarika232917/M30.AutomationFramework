@@ -46,7 +46,7 @@ public class BaseClass {
 	public void bcConfig(/*String  pvalue*/) throws IOException
 	{
 		String URL =fUtil.readDataFromPropertyFile("url");
-		//driver=new ChromeDriver();
+		driver=new ChromeDriver();
 		//driver=new ChromeDriver();
 		//for cross browser execution
 		//if(pvalue.equals("firefox"))
