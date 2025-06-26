@@ -17,6 +17,7 @@ public class AddToProductToCart {
 		driver.get("https://www.saucedemo.com/");
 
 		
+		
 		//Step3 :Login to application
 		driver.findElement(By.id("user-name")).sendKeys("standard_user");
 		driver.findElement(By.id("password")).sendKeys("secret_sauce");
